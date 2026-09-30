@@ -12,6 +12,7 @@ The project is being developed by AJ Kivela, a U.S. Army National Guard veteran 
 - **Evidence Auditor** — evidence ingestion, provenance, contradiction analysis, organization, and administrative-document workflows.
 - **MedForge** — medical/scientific visualization and educational-media tooling.
 - **Forge Learn** — companion learning environment that explains the engineering and production workflows used by Forge.
+- **Forge Builder** — local-first prompt-to-app workspace with provider-neutral model routing, sandboxed project creation, live local previews, Git snapshots, static/browser QA gates, and explicitly authorized deployment adapters.
 
 ## GrimForge production pipeline
 
@@ -75,11 +76,33 @@ The project is intentionally testing whether advanced AI workflows can remain us
 4. Shot-level GPU provisioning and automatic shutdown.
 5. Cost/performance benchmarking across providers and GPU classes.
 6. Complete long-form GrimForge cinematic episodes rather than isolated clips.
+7. Forge Builder: natural-language app planning → editable project → local preview → QA → snapshot → explicitly authorized deployment.
+8. Local provider expansion through Ollama / OpenAI-compatible BYOK / desktop model runtimes without treating a ChatGPT subscription as an embedded API credential.
+
+## Current Builder verification
+
+The integrated development line now includes a working Forge Builder backend with:
+
+- local-first intelligence routing;
+- explicit privacy / cloud / metered-provider permission gates;
+- sandboxed project directories;
+- deterministic fallback scaffolds when no model is available;
+- local preview URLs;
+- per-project Git initialization and named snapshots;
+- static HTML/JavaScript QA;
+- real browser smoke testing with interaction checks.
+
+The public `forge-builder` repository remains a portable standalone implementation, while the private Forge development repository carries the integrated Forge Core implementation.
+
+## Developer toolchain
+
+See [TOOLCHAIN.md](TOOLCHAIN.md) for the currently verified development and QA tooling used around Forge, including Git/GitHub CLI, Node/npm/pnpm, Python, Ollama, FFmpeg, 12ui, Playwright, agent-browser, Vercel CLI, and Railway CLI.
 
 ## Related portfolio work
 
 - Employer-facing portfolio: https://aj-kivela-portfolio.lovable.app/
 - Public source and application portfolio: https://github.com/ajkivela369-coder/servicebridge-advocate
+- Forge Builder (public standalone implementation): https://github.com/ajkivela369-coder/forge-builder
 - SearchSignal SEO + GEO Operations Lab: https://forgesearcher.floot.app/
 - Private Forge development repository: available to collaborators/reviewers on request.
 
