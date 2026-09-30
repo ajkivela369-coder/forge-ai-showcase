@@ -1,0 +1,50 @@
+name: Portfolio Integrity
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-showcase:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify required showcase documents
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f README.md
+          test -f TOOLCHAIN.md
+          grep -q "Forge Builder" README.md
+          grep -q "servicebridge-advocate" README.md
+          grep -q "ajkivela369-coder/forge-builder" README.md
+          grep -q "chatgpt subscription" <(tr '[:upper:]' '[:lower:]' < TOOLCHAIN.md)
+          grep -q "agent-browser" TOOLCHAIN.md
+          grep -q "Playwright" TOOLCHAIN.md
+
+      - name: Check portfolio URLs are HTTPS
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+          docs = "\n".join(
+              Path(p).read_text(encoding="utf-8")
+              for p in ("README.md", "TOOLCHAIN.md")
+          )
+          urls = re.findall(r'https?://[^\s)>]+', docs)
+          insecure = [u for u in urls if u.startswith("http://")]
+          if insecure:
+              raise SystemExit("Non-HTTPS public links found: " + ", ".join(insecure))
+          print(f"Checked {len(urls)} public URL references.")
+
+      - name: Report showcase scope
+        shell: bash
+        run: |
+          echo "Forge AI showcase integrity checks passed."
+          echo "This gate verifies portfolio metadata only; it does not certify private runtime acceptance."
