@@ -1,5 +1,7 @@
 # Forge AI
 
+> **Public showcase:** This repository demonstrates Forge capabilities and architecture. The underlying application source is maintained privately and is not licensed for copying or reuse. See [INTELLECTUAL_PROPERTY.md](INTELLECTUAL_PROPERTY.md).
+
 Forge AI is a local-first AI platform designed to let ordinary consumer laptops orchestrate advanced AI workloads while routing GPU-intensive jobs to the lowest-cost capable compute.
 
 The project is being developed by AJ Kivela, a U.S. Army National Guard veteran who served as a medic and later as a Medical Service Corps officer. Forge grew from a practical constraint: serious AI work should not require a workstation-class GPU or an unlimited cloud budget.
