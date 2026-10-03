@@ -15,6 +15,11 @@ The project is being developed by AJ Kivela, a U.S. Army National Guard veteran 
 - **MedForge** — medical/scientific visualization and educational-media tooling.
 - **Forge Learn** — companion learning environment that explains the engineering and production workflows used by Forge.
 - **Forge Builder** — local-first prompt-to-app workspace with provider-neutral model routing, sandboxed project creation, live local previews, Git snapshots, static/browser QA gates, and explicitly authorized deployment adapters.
+- **VocalForge** — local-first vocal capture, analysis, enhancement, comparison, and export workstation with preserved originals and inspectable processing.
+
+## Forge Learn v0.5.9
+
+The learning companion now exposes per-feature build stories, teaches the current GrimForge one-click full-episode route, documents the Forge Builder delivery loop, includes VocalForge, and links the wider application portfolio to maintained build-and-upgrade histories.
 
 ## GrimForge production pipeline
 
