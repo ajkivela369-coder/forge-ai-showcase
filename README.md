@@ -63,6 +63,32 @@ Automated structural, syntax, fixture, UI-regression, Evidence Auditor PDF, Forg
 
 A successful fixture or CI run therefore does not relabel a previs render as production cinema, a generated medical teaching visual as validated patient-specific anatomy, or an unavailable external engine as connected.
 
+## Portfolio QA snapshot ? October 5, 2026
+
+This pass treated a live URL as insufficient by itself. Source portability, strict type checking, production builds, regression tests, and hosted error state were checked separately where applicable.
+
+- **Portfolio applications:** 71 Python regressions passed. AJ Job Fisher, Evidence Auditor, GrimForge Studio, StudyForge, and WildTake Studio pass strict TypeScript checks and production Vite builds.
+- **Integrated Forge Core:** 45/45 unit tests passed after adding WildTake coverage; modified Python services compile and the shared JavaScript layer passes syntax validation.
+- **Forge Builder standalone:** 16/16 tests passed and the v0.2 production bundle builds successfully after rebasing on the current proprietary-license/documentation line.
+- **SearchSignal:** the Creator/YouTube GEO workspace passes the full QA command and 11/11 smoke/security/scoring tests.
+
+Large media bundles in Evidence Auditor and GrimForge still produce build-size warnings, and GrimForge's media outputs remain subject to human visual/audio acceptance. Those warnings are optimization targets, not hidden as successful final-quality acceptance.
+
+### Live demonstrations
+
+- **Elias Evidence Assistant:** https://elias-evidence-assistant-simscb.v2.appdeploy.ai/
+- **GrimForge Studio:** https://grimforge-studio-xtkoo5.v2.appdeploy.ai/
+- **StudyForge:** https://studyforge-zitb2u.v2.appdeploy.ai/
+- **WildTake Studio:** https://wildtake-studio-i0atj8.v2.appdeploy.ai/
+- **AJ Job Fisher:** https://aj-job-fisher-a2507o.v2.appdeploy.ai/
+- **NeuroEval:** https://neuroeval-t6k31i.v2.appdeploy.ai/
+- **HealthQA Auditor:** https://healthqa-auditor-k719sh.v2.appdeploy.ai/
+- **PairRank:** https://pairrank-eid08f.v2.appdeploy.ai/
+- **CiteGuard:** https://citeguard-06vkq0.v2.appdeploy.ai/
+- **SearchSignal SEO + GEO Operations Lab:** https://forgesearcher.floot.app/
+
+The hosted demos are product surfaces, not proof that every optional provider integration is configured. Local-only capabilities such as Forge Core rendering require their corresponding local services.
+
 ## Why the cloud-GPU work matters
 
 The project is intentionally testing whether advanced AI workflows can remain usable for people who cannot justify or afford a dedicated high-end GPU workstation. Forge is being built around:
