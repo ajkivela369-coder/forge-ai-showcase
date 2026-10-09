@@ -8,6 +8,10 @@ The project is being developed by AJ Kivela, a U.S. Army National Guard veteran 
 
 ## Current live portfolio — October 9, 2026
 
+All seven Forge-managed demos now provide Simple/Pro modes and floating Elias usage help. SearchSignal starts with a public URL and keeps specialist tools in Pro. The public usage guide answers built-in workflow questions; no live AI model is connected to it.
+
+Validation: typecheck, production build, source-linked evidence/PDF and episode-timing checks, and all 12 evaluation regression tests passed. Seven public app routes and deployed mode/help assets were verified. Full visual/browser acceptance remains pending after automatic approval review reached the session usage limit.
+
 [Open the Forge-managed portfolio](https://aj-forge-portfolio.vercel.app/#projects).
 
 | App | Live demo |
