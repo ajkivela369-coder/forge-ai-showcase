@@ -6,6 +6,22 @@ Forge AI is a local-first AI platform designed to let ordinary consumer laptops 
 
 The project is being developed by AJ Kivela, a U.S. Army National Guard veteran who served as a medic and later as a Medical Service Corps officer. Forge grew from a practical constraint: serious AI work should not require a workstation-class GPU or an unlimited cloud budget.
 
+## Current live portfolio — October 9, 2026
+
+[Open the Forge-managed portfolio](https://aj-forge-portfolio.vercel.app/#projects).
+
+| App | Live demo |
+|---|---|
+| Evidence Auditor | [Open](https://aj-forge-portfolio.vercel.app/apps/evidence/) |
+| SearchSignal | [Open](https://aj-forge-portfolio.vercel.app/apps/searchsignal/) |
+| NeuroEval | [Open](https://aj-forge-portfolio.vercel.app/apps/neuroeval/) |
+| HealthQA Auditor | [Open](https://aj-forge-portfolio.vercel.app/apps/healthqa/) |
+| PairRank | [Open](https://aj-forge-portfolio.vercel.app/apps/pairrank/) |
+| CiteGuard | [Open](https://aj-forge-portfolio.vercel.app/apps/citeguard/) |
+| GrimForge War Theater | [Open](https://aj-forge-portfolio.vercel.app/apps/grimforge/) |
+
+Forge manages the source, checks, Git snapshots, GitHub sync, and deployment. Public HTTPS uses Forge Builder's existing Vercel adapter. **Forge is primary; Floot is the fallback.** SearchSignal has a published [Floot backup](https://forgesearcher.floot.app/); the other six demos currently use Forge. The private local evidence API is separate from public demos. Evaluation scores are transparent rules or human judgments; the GrimForge public demo produces a playable storyboard and planning exports.
+
 ## What Forge includes
 
 - **Forge Core** — shared orchestration, model routing, compute routing, privacy controls, provenance, storage, provider health, and cost policy.
