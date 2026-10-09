@@ -8,9 +8,11 @@ The project is being developed by AJ Kivela, a U.S. Army National Guard veteran 
 
 ## Current live portfolio — October 9, 2026
 
-All seven Forge-managed demos now provide Simple/Pro modes and floating Elias usage help. SearchSignal starts with a public URL and keeps specialist tools in Pro. The public usage guide answers built-in workflow questions; no live AI model is connected to it.
+All seven Forge-managed demos provide Simple/Pro modes and floating Elias help. SearchSignal starts with a public URL and keeps specialist tools in Pro. NeuroEval, HealthQA, PairRank, and CiteGuard add live Europe PMC searches, source imports, and Elias workspace actions for checklists, comparison briefs, claim splitting, and editable review notes. Their copilot uses local actions and literature research; a generative model is not connected.
 
-Validation: typecheck, production build, source-linked evidence/PDF and episode-timing checks, and all 12 evaluation regression tests passed. Seven public app routes and deployed mode/help assets were verified. Full visual/browser acceptance remains pending after automatic approval review reached the session usage limit.
+**Standing rule: use our own apps, tools, and servers; build missing capabilities ourselves. Do not depend on apps or workflows that require credits, including free or trial credit balances. A fallback qualifies only when the required operation works without credits.**
+
+Validation: typecheck, client and server production builds, source-linked evidence/PDF and episode-timing checks, and all 16 evaluation/copilot regression tests passed. All seven public app routes, exact deployed evaluation assets, and live Europe PMC research responses were verified. Full visual/browser acceptance remains pending after automatic approval review reached the session usage limit.
 
 [Open the Forge-managed portfolio](https://aj-forge-portfolio.vercel.app/#projects).
 
@@ -24,7 +26,7 @@ Validation: typecheck, production build, source-linked evidence/PDF and episode-
 | CiteGuard | [Open](https://aj-forge-portfolio.vercel.app/apps/citeguard/) |
 | GrimForge War Theater | [Open](https://aj-forge-portfolio.vercel.app/apps/grimforge/) |
 
-Forge manages the source, checks, Git snapshots, GitHub sync, and deployment. Public HTTPS uses Forge Builder's existing Vercel adapter. **Forge is primary; Floot is the fallback.** SearchSignal has a published [Floot backup](https://forgesearcher.floot.app/); the other six demos currently use Forge. The private local evidence API is separate from public demos. Evaluation scores are transparent rules or human judgments; the GrimForge public demo produces a playable storyboard and planning exports.
+Forge manages the source, checks, Git snapshots, GitHub sync, and deployment. Public HTTPS uses Forge Builder's existing Vercel adapter. **Forge is primary; Floot is an optional fallback only when the required operation works without credits.** SearchSignal has a published [Floot backup](https://forgesearcher.floot.app/); the other six demos currently use Forge. The private local evidence API is separate from public demos. Evaluation scores are transparent rules or human judgments; the GrimForge public demo produces a playable storyboard and planning exports.
 
 ## What Forge includes
 
@@ -109,19 +111,9 @@ This pass treated a live URL as insufficient by itself. Source portability, stri
 
 Large media bundles in Evidence Auditor and GrimForge still produce build-size warnings, and GrimForge's media outputs remain subject to human visual/audio acceptance. Those warnings are optimization targets, not hidden as successful final-quality acceptance.
 
-### Live demonstrations
+### Preserved deployment history
 
-- **Elias Evidence Assistant:** https://elias-evidence-assistant-simscb.v2.appdeploy.ai/
-- **GrimForge Studio:** https://grimforge-studio-xtkoo5.v2.appdeploy.ai/
-- **StudyForge:** https://studyforge-zitb2u.v2.appdeploy.ai/
-- **WildTake Studio:** https://wildtake-studio-i0atj8.v2.appdeploy.ai/
-- **NeuroEval:** https://neuroeval-t6k31i.v2.appdeploy.ai/
-- **HealthQA Auditor:** https://healthqa-auditor-k719sh.v2.appdeploy.ai/
-- **PairRank:** https://pairrank-eid08f.v2.appdeploy.ai/
-- **CiteGuard:** https://citeguard-06vkq0.v2.appdeploy.ai/
-- **SearchSignal SEO + GEO Operations Lab:** https://forgesearcher.floot.app/
-
-The hosted demos are product surfaces, not proof that every optional provider integration is configured. Local-only capabilities such as Forge Core rendering require their corresponding local services.
+Earlier credit-hosted demo URLs are retained in the [previous deployment record](https://github.com/ajkivela369-coder/forge-ai-showcase/blob/59ecd5fccca4d0f1682942026e770b382bc81050/README.md#live-demonstrations). Use the current Forge demo table above. The original sources and records remain intact.
 
 ## Why the cloud-GPU work matters
 
@@ -167,7 +159,7 @@ See [TOOLCHAIN.md](TOOLCHAIN.md) for the currently verified development and QA t
 
 ## Related portfolio work
 
-- Employer-facing portfolio: https://aj-kivela-portfolio.lovable.app/
+- Employer-facing portfolio: https://aj-forge-portfolio.vercel.app/#projects
 - Private implementation and application portfolio (collaborator access required): https://github.com/ajkivela369-coder/servicebridge-advocate
 - Forge Builder (public standalone implementation): https://github.com/ajkivela369-coder/forge-builder
 - SearchSignal SEO + GEO Operations Lab: https://forgesearcher.floot.app/
